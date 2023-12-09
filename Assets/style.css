@@ -975,6 +975,7 @@ h3 {
   );
 }
 
+/*Media Query*/
 @media screen and (max-width: 992px) {
   .header-hero-wrapper .header {
     padding: 52px 15px;
@@ -1481,7 +1482,7 @@ h3 {
   .hero-section .header .logo {
     display: flex;
     align-items: center;
-
+    margin: auto;
     width: 100%;
     justify-content: center;
   }
@@ -1504,5 +1505,19 @@ h3 {
     width: 100%;
     justify-content: center;
     top: 35px;
+  }
+
+  .hero-section .hero-container .hero-title-wrapper .third-line {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 667px) {
+  .hero-section .hero-container .hero-title-wrapper {
+    align-items: self-start !important;
+  }
+
+  .hero-section .hero-container .hero-title-wrapper .second-line {
+    font-size: 60px !important;
   }
 }
